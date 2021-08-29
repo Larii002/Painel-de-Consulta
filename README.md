@@ -1,6 +1,6 @@
 # Painel-de-Consultas Completo.
 
-![alt text](https://user-images.githubusercontent.com/87872423/131260312-e2d31c28-1af0-4f22-bc36-fdaccc03e92c.jpg)
+![alt text](https://github.com/DioBruh/Painel-de-Consulta/blob/main/painel.jpg)
 
 # Painel de consultas Completo com métodos atualizados.
 

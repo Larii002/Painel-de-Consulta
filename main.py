@@ -46,6 +46,8 @@ def banner(cor):
  ▒ ░▒░    ░ ▒ ▒░  ░ ░  ░░ ░▒  ░ ░    ░      ▒   ▒▒ ░  ░▒ ░ ▒░
  ░ ░ ░  ░ ░ ░ ▒     ░   ░  ░  ░    ░        ░   ▒     ░░   ░ 
  ░   ░      ░ ░     ░  ░      ░                 ░  ░   ░   
+ 
+{amare}[!]{amare}{V}--developed by DioBrando--.{amare}[!]{amare}
 
 {amare}[!]{amare}{V}--developed by joestar hacking--.{amare}[!]{amare}
 ''')

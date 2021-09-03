@@ -690,7 +690,7 @@ elif esc == "14":
                 os.fork()
 elif esc == "15":
     clear()
-    print(f'{M}Salve para os manos: {V}Mr diniz, Joshu, matheus joestar, Dio, crowley, lucas\nSpyware, Kimatsuki, vitor.');sleep(5);clear()
+    print(f'{M}Salve para os manos: {V}Mr diniz, Joshu, matheus joestar, Dio, crowley, lucas\nSpyware, Kimatsuki, vitor, Jotaro.');sleep(5);clear()
     print(f'{M}Salve pros manos da joestar team :D.{V}Diniz, Joshu, Dio, Spyware, Matheus Joestar.');sleep(5);clear()
     print(f'{M}Salve pra quem divulgou o painel.');sleep(6);clear();restart()
 

@@ -10,7 +10,7 @@
 
 
 # Painel-de-Consultas Completo.
-# Feito por JOESTAR-TEAM
+# Feito por AMSTER
 
 ![alt text](https://github.com/DioBruh/Painel-de-Consulta/blob/main/painel.jpg)
 

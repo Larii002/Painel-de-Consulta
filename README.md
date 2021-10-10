@@ -12,7 +12,7 @@
 # Painel-de-Consultas Completo.
 # Feito por AMSTER
 
-![alt text](https://github.com/DioBruh/Painel-de-Consulta/blob/main/painel.jpg)
+![alt text](https://github.com/DioBruh/Painel-de-Consulta/blob/main/molhos.jpg)
 
 # Painel de consultas Completo com métodos atualizados.
 

